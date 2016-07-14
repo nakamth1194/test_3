@@ -7,6 +7,13 @@ a:hover .con{
   opacity: 0.5;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
 
 
 
