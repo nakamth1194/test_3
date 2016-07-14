@@ -5,8 +5,28 @@
 	<title>フジロック</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript">
+
+	jQuery(function($) {
+
+var nav    = $('.jq'),
+    offset = nav.offset();
+
+$(window).scroll(function () {
+  if($(window).scrollTop() > offset.top) {
+    nav.addClass('fixed');
+  } else {
+    nav.removeClass('fixed');
+  }
+});
+
+});
+
+
+
+
+	</script>
 </head>
 
 <body>
@@ -18,7 +38,8 @@
 
 
 	<div class="wrap_mid">
-		<div class="wrap_li script">
+		<div class="wrap_li">
+			<div class="jq">
 			<ul class="hed_ul">
 				<li class="hed_li"><a href="">ホーム</a></li>
 				<li class="hed_li">ニュース</li>
@@ -37,10 +58,10 @@
 				<li class="hed_li_2"><img src="img/5.png" alt="Youtube" width="30" height="30"></li>
 			</ul>
 		</div>
+		</div>
 
 <div class="wrap_main">
 		<div class="wrap_main_mid">
-			<a href="">
 			<div class="con">
 				<img src="img/con01.jpg" alt="1/3" width="250" height="200"></a>
 					<div class="con_top">
